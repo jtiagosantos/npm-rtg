@@ -3,6 +3,7 @@ import { CONSTANTS } from '../constants';
 import { generateTokenJustLetters } from './generate-token-just-letters';
 import { generateTokenJustLowercaseLetters } from './generate-token-just-lowercase-letters';
 import { generateTokenJustUppercaseLetters } from './generate-token-just-uppercase-letters';
+import { generateTokenJustNumbers } from './generate-token-just-numbers';
 
 import { TokenOptions } from '../types/token-options';
 
@@ -13,8 +14,12 @@ export const generateToken = (
   tokenOptions?: TokenOptions,
 ): string => {
   if (tokenOptions) {
-    const { justLetters, justLowercaseLetters, justUppercaseLetters } =
-      tokenOptions;
+    const {
+      justLetters,
+      justLowercaseLetters,
+      justUppercaseLetters,
+      justNumbers,
+    } = tokenOptions;
 
     if (justLetters) return generateTokenJustLetters(tokenLength);
 
@@ -23,6 +28,8 @@ export const generateToken = (
 
     if (justUppercaseLetters)
       return generateTokenJustUppercaseLetters(tokenLength);
+
+    if (justNumbers) return generateTokenJustNumbers(tokenLength);
   }
 
   let token = '';
