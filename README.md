@@ -35,13 +35,13 @@ yarn add npm-rtg
 
 🟢 import package:
 
-```
+```ts
 import { generateToken } from 'npm-rtg';
 ```
 
 or
 
-```
+```ts
 const { generateToken } = require('npm-rtg');
 ```
 
@@ -51,18 +51,18 @@ const { generateToken } = require('npm-rtg');
 
 1. Random generic token:
 
-```
+```ts
 const randomToken = generateToken(40);
 console.log(randomToken);
 
 
 // Output example:
-// 1dtayTtUJqPZJe1tBsOAox9DnsVfpEpYZiynscWH
+// AjIH9EUtxQX7IsFBg5pf0gJXXPBMUvdprTHjBo3W
 ```
 
 2. Random token just letters:
 
-```
+```ts
 const token = generateToken(8, {
   justLetters: true,
 });
@@ -75,7 +75,7 @@ console.log(token);
 
 3. Random token just lowercase letters:
 
-```
+```ts
 const token = generateToken(40, {
   justLowercaseLetters: true,
 });
@@ -88,7 +88,7 @@ console.log(token);
 
 4. Random token just uppercase letters:
 
-```
+```ts
 const token = generateToken(40, {
   justUppercaseLetters: true,
 });
@@ -101,7 +101,7 @@ console.log(token);
 
 5. Random token just numbers:
 
-```
+```ts
 const token = generateToken(40, {
   justNumbers: true,
 });
