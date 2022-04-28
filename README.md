@@ -17,7 +17,6 @@
 </p>
 
 <br>
-<br>
 
 ### 🚀 Install package
 
@@ -34,16 +33,81 @@ yarn add npm-rtg
 
 ### 💻 Usage
 
-1. Random generic token:
+🟢 import package:
 
 ```
 import { generateToken } from 'npm-rtg';
-// or const { generateToken } = require('npm-rtg');
+```
 
+or
+
+```
+const { generateToken } = require('npm-rtg');
+```
+
+<br>
+
+⚡ Examples:
+
+1. Random generic token:
+
+```
 const randomToken = generateToken(40);
 console.log(randomToken);
 
 
 // Output example:
 // 1dtayTtUJqPZJe1tBsOAox9DnsVfpEpYZiynscWH
+```
+
+2. Random token just letters:
+
+```
+const token = generateToken(8, {
+  justLetters: true,
+});
+console.log(token);
+
+
+// Output example:
+// fSLVmOtDEGArSSqThjuEpeXlhlovaBhHkghunYoO
+```
+
+3. Random token just lowercase letters:
+
+```
+const token = generateToken(40, {
+  justLowercaseLetters: true,
+});
+console.log(token);
+
+
+// Output example:
+// fmdtvyetjbktpdygovywkqznvtmwckrzdnqotgrl
+```
+
+4. Random token just uppercase letters:
+
+```
+const token = generateToken(40, {
+  justUppercaseLetters: true,
+});
+console.log(token);
+
+
+// Output example:
+// ETSKSNRTIJCIYJWLSAVOFJPGHDTXWNNGFSEFXQRV
+```
+
+5. Random token just numbers:
+
+```
+const token = generateToken(40, {
+  justNumbers: true,
+});
+console.log(token);
+
+
+// Output example:
+// 1587385939407518647197201929918727461338
 ```
