@@ -1,0 +1,8 @@
+{
+  "testPathIgnorePatterns": ["/node_modules"],
+  "transform": {
+    "^.+\\.(t|j)sx?$": "@swc/jest"
+  },
+  "testEnvironment": "node",
+  "testRegex": "(/tests/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$"
+}
