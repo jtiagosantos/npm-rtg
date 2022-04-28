@@ -5,7 +5,7 @@ const constants_1 = require("../constants");
 const { CHARACTERS } = constants_1.CONSTANTS;
 const generateToken = (tokenLength) => {
     let token = '';
-    for (let i = 0; i < length; i++) {
+    for (let i = 0; i < tokenLength; i++) {
         token += CHARACTERS[Math.floor(Math.random() * CHARACTERS.length)];
     }
     return token;
