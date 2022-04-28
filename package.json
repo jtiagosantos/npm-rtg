@@ -1,6 +1,6 @@
 {
   "name": "npm-rtg",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "tiago_santos",
   "license": "MIT",
   "description": "package for generate random tokens",
@@ -18,7 +18,8 @@
   "scripts": {
     "build": "tsc",
     "dev": "ts-node src/index.ts",
-    "test": "jest --config jest.config.json"
+    "test": "jest --config jest.config.json",
+    "watch": "yarn test --watch"
   },
   "repository": {
     "type": "git",
