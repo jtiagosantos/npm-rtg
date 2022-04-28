@@ -63,7 +63,7 @@ console.log(randomToken);
 2. Random token just letters:
 
 ```ts
-const token = generateToken(8, {
+const token = generateToken(40, {
   justLetters: true,
 });
 console.log(token);

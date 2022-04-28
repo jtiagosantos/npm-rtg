@@ -1,6 +1,6 @@
 {
   "name": "npm-rtg",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "author": "tiago_santos",
   "license": "MIT",
   "description": "package for generate random tokens",
