@@ -1,10 +1,5 @@
 <div align="center">
-  <span style="font-weight: bold; font-size: 50px;">R</span>
-  <span style="font-size: 20px;">andom</span>
-  <span style="font-weight: bold; font-size: 50px;">T</span>
-  <span style="font-size: 20px;">oken</span>
-  <span style="font-weight: bold; font-size: 50px;">G</span>
-  <span style="font-size: 20px;">enerator</span>
+  <img alt="Random Token Generator" src=".github/title.png" />
 </div>
 
 <h1></h1>
